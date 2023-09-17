@@ -1,1 +1,123 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-smooth: always;
+  -webkit-text-size-adjust: 100%;
+  color: #454d62;
+  font-family: Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif !important;
+  line-height: normal !important;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 200vh;
+  .daily {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.04), 0 3px 1px -2px rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.06);
+    height: 24px;
+    overflow: hidden;
+
+    .daily-body {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  #header {
+    .header-height {
+      height: 25px;
+    }
+
+    .header-body {
+      height: 72px;
+
+      .ikon-container {
+        clear: both;
+        margin: 0 auto;
+        position: relative;
+        width: 976px;
+
+        .silhouette {
+          background: url(https://content.ikon.mn/ikon/images/silhouette.png)
+            100% 0 no-repeat;
+          height: 72px;
+
+          .alogo {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(https://content.ikon.mn/ikon/images/ikon.png);
+            border: 0;
+            display: block;
+            height: 72px;
+            width: 267.5px;
+          }
+        }
+      }
+    }
+
+    .header-menu {
+      background: #454d62 url(https://content.ikon.mn/ikon/images/hsprite.png) 0
+        0 repeat-x;
+      height: 37px;
+      overflow: hidden;
+
+      .ikon-container {
+        .inavbar {
+          background-color: transparent;
+          min-height: 37px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.ikon-container {
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  width: 976px;
+}
+
+.imenu {
+  border-left: 1px solid #393f50;
+  height: 37px;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  & > li {
+    display: inline-block;
+    height: 37px;
+
+    & > a {
+      border-left: 1px solid #545b6e;
+      border-right: 1px solid #393f50;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 18px;
+      height: 38px;
+      line-height: 37px;
+      padding: 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.ifont {
+  font-family: oscl, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imenu > li.active > a {
+  background: url(https://content.ikon.mn/ikon/images/hsprite.png) 0 -38px repeat-x;
+  border-right: 1px solid #000;
+  color: #fff;
+}
